@@ -1,0 +1,107 @@
+name: table-extract
+
+# 触发方式：
+#   1. repository_dispatch（外部 HTTP 每 5 分钟触发，例如 cron-job.org）
+#        POST https://api.github.com/repos/{owner}/{repo}/dispatches
+#        Authorization: Bearer {PAT}
+#        Content-Type: application/json
+#        {"event_type": "table-extract"}
+#        （可选 client_payload: {"region": "cn", "force": "true"}）
+#   2. workflow_dispatch（手动触发，仓库 Actions 页面按钮）
+
+on:
+  workflow_dispatch:
+    inputs:
+      region:
+        description: '渠道: cn=国服 / os=国际服'
+        required: false
+        default: cn
+      force:
+        description: '强制重跑（绕过 archive 已存在检查）: true / false'
+        required: false
+        default: 'false'
+  repository_dispatch:
+    types:
+      - table-extract
+
+# 并发控制：同一时刻只允许一个 table-extract 实例运行。
+# 若 cron 触发时上一个还没跑完，新实例会排队等待（cancel-in-progress: false 不打断已有任务）。
+concurrency:
+  group: table-extract
+  cancel-in-progress: false
+
+env:
+  ARCHIVE_BRANCH: archive
+
+jobs:
+  extract:
+    name: 提取并归档 Table
+    runs-on: windows-latest
+    timeout-minutes: 40
+    steps:
+      - name: 检出代码与预编译工具 (main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      # archive 分支存成品 table；首次使用需先手动创建该分支（见 README）
+      - name: 检出 archive 分支
+        uses: actions/checkout@v4
+        with:
+          ref: archive
+          path: archive-data
+
+      - name: 安装 Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # AnimeStudio.CLI 为 framework-dependent 预编译产物，需要 .NET 9 运行时（无需现场编译）
+      - name: 安装 .NET 9 运行时
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: 解析触发参数 (region / force)
+        id: cfg
+        shell: pwsh
+        run: |
+          $region = ''
+          $force = ''
+          if ('${{ github.event_name }}' -eq 'workflow_dispatch') {
+            $region = '${{ github.event.inputs.region }}'
+            $force = '${{ github.event.inputs.force }}'
+          } elseif ('${{ github.event_name }}' -eq 'repository_dispatch') {
+            $region = '${{ github.event.client_payload.region }}'
+            $force = '${{ github.event.client_payload.force }}'
+          }
+          $region = [string]$region
+          $force = [string]$force
+          if ($region -eq '' -or $region -eq 'null') { $region = 'cn' }
+          $force = if ($force.ToLowerInvariant() -eq 'true') { 'true' } else { 'false' }
+          Write-Host "region=$region force=$force"
+          "region=$region" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+          "force=$force" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
+
+      - name: 运行提取流程 (获取 -> 下载 -> 处理 -> 归档)
+        shell: pwsh
+        run: |
+          $args = @('--region', "${{ steps.cfg.outputs.region }}", '--archive-dir', './archive-data')
+          if ("${{ steps.cfg.outputs.force }}" -eq 'true') { $args += '--force' }
+          node workflow/run.mjs @args
+
+      - name: 提交并推送 archive 分支
+        shell: pwsh
+        run: |
+          cd archive-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add table
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host '无变更（版本已归档或本次无更新），跳过推送'
+          } else {
+            git commit -m "table: ${{ steps.cfg.outputs.region }} $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+            git push origin $env:ARCHIVE_BRANCH
+            Write-Host '已推送 archive 分支'
+          }
