@@ -96,9 +96,8 @@ GitHub 只扫描**仓库根目录**的 `.github/workflows/`。因此把 yml 复�
 
 ### 3.3 前置准备
 
-1. **创建 `archive` 分支**：在仓库里 `git checkout --orphan archive && git commit --allow-empty -m "init" && git push origin archive`（首次会 checkout 失败，故必须先创建）。
-2. **开启写权限**：仓库 `Settings → Actions → General → Workflow permissions` 选择 **Read and write permissions**（否则无法 push 到 `archive`）。
-3. **设置 Node / .NET**：Actions 会自动安装 Node 22 与 .NET 9 运行时，无需额外配置。
+1. **开启写权限（必需）**：仓库 `Settings → Actions → General → Workflow permissions` 选择 **Read and write permissions**（否则无法 push 到 `archive`）。`archive` 分支**无需手动创建**——工作流首次运行时会自动创建（远程不存在则从空 orphan 分支推建，已存在则检出最新内容增量追加）。
+2. **设置 Node / .NET**：Actions 会自动安装 Node 22 与 .NET 9 运行时，无需额外配置。
 
 ---
 

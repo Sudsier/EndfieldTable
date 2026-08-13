@@ -32,6 +32,7 @@ concurrency:
 
 env:
   ARCHIVE_BRANCH: archive
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   extract:
@@ -43,13 +44,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-
-      # archive 分支存成品 table；首次使用需先手动创建该分支（见 README）
-      - name: 检出 archive 分支
-        uses: actions/checkout@v4
-        with:
-          ref: archive
-          path: archive-data
 
       - name: 安装 Node.js 22
         uses: actions/setup-node@v4
@@ -83,6 +77,29 @@ jobs:
           "region=$region" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
           "force=$force" | Out-File -FilePath $env:GITHUB_OUTPUT -Append -Encoding utf8
 
+      # 手动准备 archive-data git 工作区（不用 actions/checkout，避免 archive 分支不存在时直接失败）：
+      #   archive 分支已存在 -> 检出其最新内容
+      #   archive 分支不存在 -> 创建 orphan 分支，首次推送时自动创建远程分支
+      - name: 准备 archive-data 工作区
+        shell: pwsh
+        run: |
+          $repo = '${{ github.repository }}'
+          $remote = "https://x-access-token:$env:GH_TOKEN@github.com/$repo.git"
+          New-Item -ItemType Directory -Force -Path archive-data | Out-Null
+          Push-Location archive-data
+          git init -q
+          git remote add origin $remote
+          git fetch -q --depth=1 origin $env:ARCHIVE_BRANCH
+          if ($LASTEXITCODE -eq 0) {
+            git checkout -q -B $env:ARCHIVE_BRANCH FETCH_HEAD
+            Write-Host "archive 分支已存在，已检出其最新内容"
+          } else {
+            git checkout -q --orphan $env:ARCHIVE_BRANCH
+            git rm -rf -q . --ignore-unmatch 2>$null
+            Write-Host "archive 分支不存在，已创建 orphan 分支（首次推送时自动建远程分支）"
+          }
+          Pop-Location
+
       - name: 运行提取流程 (获取 -> 下载 -> 处理 -> 归档)
         shell: pwsh
         run: |
@@ -93,7 +110,7 @@ jobs:
       - name: 提交并推送 archive 分支
         shell: pwsh
         run: |
-          cd archive-data
+          Push-Location archive-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add table
@@ -101,7 +118,8 @@ jobs:
           if ($LASTEXITCODE -eq 0) {
             Write-Host '无变更（版本已归档或本次无更新），跳过推送'
           } else {
-            git commit -m "table: ${{ steps.cfg.outputs.region }} $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
-            git push origin $env:ARCHIVE_BRANCH
+            git commit -q -m "table: ${{ steps.cfg.outputs.region }} $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+            git push -q origin $env:ARCHIVE_BRANCH
             Write-Host '已推送 archive 分支'
           }
+          Pop-Location
