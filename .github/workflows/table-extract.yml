@@ -45,16 +45,10 @@ jobs:
         with:
           ref: main
 
-      - name: 安装 Node.js 22
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      # AnimeStudio.CLI 为 framework-dependent 预编译产物，需要 .NET 9 运行时（无需现场编译）
-      - name: 安装 .NET 9 运行时
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 9.0.x
+      # 无需安装 Node / .NET：
+      #   - run.exe 为 pkg 打包的单文件可执行（内置 Node 18 运行时）
+      #   - tools/AnimeStudio.CLI/AnimeStudio.CLI.zip 为自包含解包工具（内置 .NET 运行时，
+      #     首次运行时由 run.exe 自动解压为 AnimeStudio.CLI.exe）
 
       - name: 解析触发参数 (region / force)
         id: cfg
@@ -100,12 +94,17 @@ jobs:
           }
           Pop-Location
 
-      - name: 运行提取流程 (获取 -> 下载 -> 处理 -> 归档)
+      # run.exe / tools/ 均位于仓库根目录（workflow 文件夹内容直接上传到根目录，不建 workflow/ 子目录）
+      - name: 运行提取流程 (获取 -> 下载 -> 处理 -> 归档 -> 生成活动简化 JSON)
         shell: pwsh
         run: |
+          Write-Host '当前仓库根目录:'
+          Get-ChildItem -Force | Select-Object -ExpandProperty Name
+          if (-not (Test-Path 'run.exe')) { throw '仓库根目录缺少 run.exe（请确认已上传 workflow 文件夹内容到根目录）' }
+          if (-not (Test-Path 'tools/AnimeStudio.CLI/AnimeStudio.CLI.zip')) { throw '仓库根目录缺少 tools/AnimeStudio.CLI/AnimeStudio.CLI.zip' }
           $args = @('--region', "${{ steps.cfg.outputs.region }}", '--archive-dir', './archive-data')
           if ("${{ steps.cfg.outputs.force }}" -eq 'true') { $args += '--force' }
-          node workflow/run.mjs @args
+          & .\run.exe @args
 
       - name: 提交并推送 archive 分支
         shell: pwsh
@@ -113,7 +112,8 @@ jobs:
           Push-Location archive-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add table
+          # table/ 为新归档版本目录；activity-summary.json 为活动简化 JSON（每次更新覆盖）
+          git add table activity-summary.json
           git diff --cached --quiet
           if ($LASTEXITCODE -eq 0) {
             Write-Host '无变更（版本已归档或本次无更新），跳过推送'
