@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-08-26T02:31:10.333Z",
+    "generatedAt": "2026-09-02T00:31:16.939Z",
     "lang": "CN",
     "timezoneOffsetMinutes": 480,
-    "activityCount": 88,
+    "activityCount": 101,
     "withRewards": true,
     "withItemNames": true,
     "withStages": true,
@@ -138,6 +138,41 @@
       "rewards": [
         "嵌晶玉×1"
       ],
+      "stages": []
+    },
+    {
+      "id": "web_activity_v1d5_merge",
+      "name": "融合！山团团！",
+      "desc": "来吧，让我们一起看看山团团贴贴蹭蹭后能有什么样的惊喜……",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员通过融合相同的山团团，找到更大的山团团并获得积分，领取丰厚奖励。</>\n\n<@intru.bold>- 特殊提示 -</>\n<@gray.note>· 完成任务并领取奖励后，奖励将通过游戏内邮件发放。邮件有效期为30天，请及时领取。</>",
+      "time": {
+        "start": "2026/10/1 12:00:00",
+        "startMs": 1790827200000,
+        "end": "2026/10/15 6:00:00",
+        "endMs": 1792015200000,
+        "permanent": false
+      },
+      "conditions": [],
+      "rewards": [
+        "嵌晶玉×1",
+        "折金票×1"
+      ],
+      "stages": []
+    },
+    {
+      "id": "activity_newplayer_benefits_display",
+      "name": "启程福利展览板",
+      "desc": "",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 管理员可在本活动界面中查看各个系统和活动的奖励领取情况。</>\n<@gray.note>· 当所有展示的奖励领取后，本活动界面将在次日服务器时间04:00关闭。</>",
+      "time": {
+        "start": "2025/12/9 4:00:00",
+        "startMs": 1765224000000,
+        "end": null,
+        "endMs": null,
+        "permanent": true
+      },
+      "conditions": [],
+      "rewards": [],
       "stages": []
     },
     {
@@ -405,6 +440,34 @@
         {
           "conditionId": "CharacterGuide_liino_unlock1",
           "desc": "完成主线任务：第一章 - 进程Ⅱ - 修缮进展",
+          "tips": "当前主线任务进度：「%s」"
+        }
+      ],
+      "rewards": [
+        "嵌晶玉×600",
+        "折金票×1",
+        "初级认知载体×1",
+        "协议棱柱组×1",
+        "武器检查套组×1"
+      ],
+      "stages": []
+    },
+    {
+      "id": "CharacterGuide_typhoeus",
+      "name": "雾隐冬梦深林中",
+      "desc": "意料之外的讯息将管理员指向应龙关外的神秘松林，在那里，一段新的故事正等待着管理员前来开启。",
+      "instruction": "<@gray.note>全新支线任务「雾隐冬梦深林中」已开放，完成可获得丰厚奖励。</>\n\n<@intru.bold>- 任务接取条件 -</>\n<@gray.note>· 完成主线任务：第二章 - 进程Ⅶ - 余晖未却</>\n\n<@intru.bold>- 界面关闭说明 -</>\n<@gray.note>· 本推荐界面为限时展示，将于下次版本更新维护后关闭。</>\n<@gray.note>· 「雾隐冬梦深林中」为永久开放任务，界面关闭后管理员仍可随时接取并完成该任务。</>",
+      "time": {
+        "start": "2026/9/1 18:00:00",
+        "startMs": 1788256800000,
+        "end": "2026/10/15 6:00:00",
+        "endMs": 1792015200000,
+        "permanent": false
+      },
+      "conditions": [
+        {
+          "conditionId": "CharacterGuide_typhoeus_unlock1",
+          "desc": "完成主线任务：第二章 - 进程Ⅶ - 余晖未却",
           "tips": "当前主线任务进度：「%s」"
         }
       ],
@@ -758,6 +821,106 @@
       ]
     },
     {
+      "id": "activity_stamina_refund_1d5d1",
+      "name": "理智补给",
+      "desc": "",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 完成主线任务：第一章 - 进程Ⅱ - 开拓前路</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，每日固定开放三个理智补给任务。 </>\n<@gray.note>· 每日完成指定任务后，管理员可前往本活动页面，领取理智补给奖励【理智消耗许可】以及【应急理智加强剂】。 </>\n<@gray.note>· 活动期间，所有任务进度以及奖励领取状态，将在每日服务器时间04:00刷新重置。重置后，未领取的奖励将会自动清空，且无法补领。</>\n\n<@intru.bold>- 特殊提示 -</>\n<@gray.note>· 请管理员在当日完成任务后，及时前往本活动界面领取补给奖励。</>",
+      "time": {
+        "start": "2026/9/17 4:00:00",
+        "startMs": 1789588800000,
+        "end": "2026/9/24 4:00:00",
+        "endMs": 1790193600000,
+        "permanent": false
+      },
+      "conditions": [],
+      "rewards": [
+        "应急理智加强剂×1",
+        "理智消耗许可×2"
+      ],
+      "stages": [
+        {
+          "stageId": "activity_stamina_refund_1d5d1_stage_1",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "应急理智加强剂×2",
+            "理智消耗许可×4"
+          ],
+          "desc": "登录游戏。"
+        },
+        {
+          "stageId": "activity_stamina_refund_1d5d1_stage_2",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "应急理智加强剂×1",
+            "理智消耗许可×2"
+          ],
+          "desc": "挑战任意协议空间、危境再现、危境预演或能量淤积点，且累计消耗80点理智领取奖励。"
+        },
+        {
+          "stageId": "activity_stamina_refund_1d5d1_stage_3",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "应急理智加强剂×1",
+            "理智消耗许可×2"
+          ],
+          "desc": "挑战任意协议空间、危境再现、危境预演或能量淤积点，且累计消耗160点理智领取奖励。"
+        }
+      ]
+    },
+    {
+      "id": "activity_stamina_refund_1d5d2",
+      "name": "理智补给",
+      "desc": "",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 完成主线任务：第一章 - 进程Ⅱ - 开拓前路</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，每日固定开放三个理智补给任务。 </>\n<@gray.note>· 每日完成指定任务后，管理员可前往本活动页面，领取理智补给奖励【理智消耗许可】以及【应急理智加强剂】。 </>\n<@gray.note>· 活动期间，所有任务进度以及奖励领取状态，将在每日服务器时间04:00刷新重置。重置后，未领取的奖励将会自动清空，且无法补领。</>\n\n<@intru.bold>- 特殊提示 -</>\n<@gray.note>· 请管理员在当日完成任务后，及时前往本活动界面领取补给奖励。</>",
+      "time": {
+        "start": "2026/10/8 4:00:00",
+        "startMs": 1791403200000,
+        "end": "2026/10/15 4:00:00",
+        "endMs": 1792008000000,
+        "permanent": false
+      },
+      "conditions": [],
+      "rewards": [
+        "应急理智加强剂×1",
+        "理智消耗许可×2"
+      ],
+      "stages": [
+        {
+          "stageId": "activity_stamina_refund_1d5d2_stage_1",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "应急理智加强剂×2",
+            "理智消耗许可×4"
+          ],
+          "desc": "登录游戏。"
+        },
+        {
+          "stageId": "activity_stamina_refund_1d5d2_stage_2",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "应急理智加强剂×1",
+            "理智消耗许可×2"
+          ],
+          "desc": "挑战任意协议空间、危境再现、危境预演或能量淤积点，且累计消耗80点理智领取奖励。"
+        },
+        {
+          "stageId": "activity_stamina_refund_1d5d2_stage_3",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "应急理智加强剂×1",
+            "理智消耗许可×2"
+          ],
+          "desc": "挑战任意协议空间、危境再现、危境预演或能量淤积点，且累计消耗160点理智领取奖励。"
+        }
+      ]
+    },
+    {
       "id": "activity_stamina_refund_special",
       "name": "危机筹备",
       "desc": "",
@@ -813,7 +976,7 @@
       "id": "activity_char_trial_1",
       "name": "作战演练",
       "desc": "莱万汀是一名拥有强大群体输出能力的突击干员。她可以通过重击吸收附近敌人的灼热附着，触发强力战技和连携技，并使用终结技横扫大量敌人。",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励。</>",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
       "time": {
         "start": "2025/12/9 4:00:00",
         "startMs": 1765224000000,
@@ -835,7 +998,7 @@
       "id": "activity_char_trial_v1d1_1",
       "name": "作战演练",
       "desc": "",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励。</>",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
       "time": {
         "start": "2026/3/11 18:00:00",
         "startMs": 1773223200000,
@@ -857,7 +1020,7 @@
       "id": "activity_char_trial_v1d1_2",
       "name": "作战演练",
       "desc": "",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励。</>",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
       "time": {
         "start": "2026/3/29 12:00:00",
         "startMs": 1774756800000,
@@ -879,7 +1042,7 @@
       "id": "activity_char_trial_v1d2_1",
       "name": "作战演练",
       "desc": "",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励。</>",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
       "time": {
         "start": "2026/4/16 18:00:00",
         "startMs": 1776333600000,
@@ -901,7 +1064,7 @@
       "id": "activity_char_trial_v1d3_1",
       "name": "作战演练",
       "desc": "",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励。</>",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
       "time": {
         "start": "2026/6/4 18:00:00",
         "startMs": 1780567200000,
@@ -923,7 +1086,7 @@
       "id": "activity_char_trial_v1d3_2",
       "name": "作战演练",
       "desc": "",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励。</>",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
       "time": {
         "start": "2026/6/26 12:00:00",
         "startMs": 1782446400000,
@@ -945,7 +1108,7 @@
       "id": "activity_char_trial_v1d4_1",
       "name": "作战演练",
       "desc": "",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励。</>",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
       "time": {
         "start": "2026/7/15 18:00:00",
         "startMs": 1784109600000,
@@ -969,7 +1132,7 @@
       "id": "activity_char_trial_v1d4_2",
       "name": "作战演练",
       "desc": "",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励。</>",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
       "time": {
         "start": "2026/8/9 12:00:00",
         "startMs": 1786248000000,
@@ -989,10 +1152,33 @@
       "stages": []
     },
     {
+      "id": "activity_char_trial_v1d5_1",
+      "name": "作战演练",
+      "desc": "",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
+      "time": {
+        "start": "2026/9/1 18:00:00",
+        "startMs": 1788256800000,
+        "end": "2026/9/30 12:00:00",
+        "endMs": 1790740800000,
+        "permanent": false
+      },
+      "conditions": [],
+      "rewards": [
+        "嵌晶玉×100",
+        "武库防具箱α·冬猎×1",
+        "存续的痕迹×1",
+        "折金票×4000",
+        "协议棱柱×4",
+        "中级作战记录×8"
+      ],
+      "stages": []
+    },
+    {
       "id": "activity_char_trial_2",
       "name": "作战演练",
       "desc": "伊冯是一名通过暴击造成大量输出的干员。施放终结技后，能获得强力的单体输出能力。",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励。</>",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
       "time": {
         "start": "2026/2/24 12:00:00",
         "startMs": 1771905600000,
@@ -1014,7 +1200,7 @@
       "id": "activity_char_trial_3",
       "name": "作战演练",
       "desc": "洁尔佩塔是兼具法术和物理能力的辅助干员。她可以在触发法术异常后快速造成击飞，并且施放终结技后可以对大范围内的敌人施加法术脆弱效果。",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励。</>",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可使用包含对应干员的固定队伍，体验指定关卡。</>\n<@gray.note>· 在指定关卡中，管理员无法调整队伍中的干员、干员等级以及干员携带的武器和装备。</>\n<@gray.note>· 活动期间，通关指定关卡后，可在本活动界面领取奖励，包括较为适配当期试用干员的特殊满精锻60级套组装备。</>",
       "time": {
         "start": "2026/2/7 12:00:00",
         "startMs": 1770436800000,
@@ -2078,6 +2264,28 @@
       ]
     },
     {
+      "id": "activity_high_difficulty_v1d5",
+      "name": "丰碑留名·刻影",
+      "desc": "",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 完成主线任务：第一章 - 进程Ⅱ - 开拓前路</>\n<@gray.note>· 管理员权限等阶≥30级</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 当管理员达到指定权限等阶后，即可解锁「影拓丰碑」系列关卡。</>\n<@gray.note>· 在「影拓丰碑」中完成对应挑战，即可领取「丰碑留名」活动奖励。</>",
+      "time": {
+        "start": "2026/10/5 12:00:00",
+        "startMs": 1791172800000,
+        "end": "2026/10/19 4:00:00",
+        "endMs": 1792353600000,
+        "permanent": false
+      },
+      "conditions": [
+        {
+          "conditionId": "activity_high_difficulty_unlock_condition_v1d5",
+          "desc": "管理员权限等阶到达30级",
+          "tips": "当前权限等阶%d级（可根据行动手册指引完成各项任务，获取行动资历，提升权限等阶）"
+        }
+      ],
+      "rewards": [],
+      "stages": []
+    },
+    {
       "id": "activity_submit_food_1",
       "name": "物资供给·开拓节",
       "desc": "为了让人们拾起面对困境的勇气，罗曼请求管理员帮忙准备一些食物，分发给众人。",
@@ -3039,6 +3247,35 @@
       ]
     },
     {
+      "id": "activity_seasontower_0",
+      "name": "战争回响",
+      "desc": "战争残留的痕迹仍存在于您的刀剑之上，感受它，阅读它，哀悼它，让勋章与荣耀再度降于掌心吧，管理员。",
+      "instruction": "<@intru.bold>- 参与条件 -</> \n<@gray.note>· 管理员权限等阶≥40级</> \n<@gray.note>· 完成主线任务：第一章 - 进程Ⅱ - 开拓前路</>\n\n<@intru.bold>- 玩法简介 -</> \n<@gray.note>· 「战争回响」为赛季制常驻挑战玩法，管理员可通过挑战不同关卡累积星数评级，来获得最终的赛季称号。</> \n<@gray.note>· 每个赛季包含多个轮换周期，每个轮换周期持续时间一般不少于7天。</> \n<@gray.note>· 每个轮换周期包含3个关卡（可能包含往期关卡）。 同一轮换周期内，3个关卡所获星数之和为该周期的总评级。</> \n<@gray.note>· 周期轮换后，新周期的关卡星数评级将被重置，需重新挑战以再次获得星数；历史周期的总评级将被记录，并将参与赛季的「最终评级」统计。</> \n<@gray.note>· 当前赛季各轮换周期总评级中的最高者，将作为本赛季的「最终评级」。依照最终评级，管理员可获得对应的赛季称号。</> \n<@gray.note>· 当前赛季的赛季称号会在好友相关界面展示。</>\n<@gray.note>· 更多玩法说明，可在「战争回响」界面中查看。</> ",
+      "time": {
+        "start": "2026/7/15 18:00:00",
+        "startMs": 1784109600000,
+        "end": null,
+        "endMs": null,
+        "permanent": true
+      },
+      "conditions": [
+        {
+          "conditionId": "activity_seasontower_0_unlock_condition_1",
+          "desc": "管理员权限等阶到达40级",
+          "tips": "当前权限等阶%d级（可根据行动手册指引完成各项任务，获取行动资历，提升权限等阶）"
+        }
+      ],
+      "rewards": [
+        "嵌晶玉×1",
+        "高阶培养自选箱Ⅰ×1",
+        "高级认知载体×1",
+        "存续的痕迹×1",
+        "折金票×1",
+        "协议棱柱组×1"
+      ],
+      "stages": []
+    },
+    {
       "id": "activity_contingency_contract_0",
       "name": "危机合约 重燃测试作战",
       "desc": "古老的合约理应延续，过去的合作尚需恢复。管理员，一份礼物已经送达。",
@@ -3067,8 +3304,8 @@
         "高级认知载体×1",
         "三相纳米片×1",
         "象限拟合液×1",
-        "快子遴捡晶格\n×1",
-        "D96钢样品四\n×1",
+        "快子遴捡晶格×1",
+        "D96钢样品四×1",
         "超距辉映管×1",
         "冷却脂×1",
         "折金票×1",
@@ -3117,33 +3354,173 @@
       ]
     },
     {
-      "id": "activity_seasontower_0",
-      "name": "战争回响",
-      "desc": "战争残留的痕迹仍存在于您的刀剑之上，感受它，阅读它，哀悼它，让勋章与荣耀再度降于掌心吧，管理员。",
-      "instruction": "<@intru.bold>- 参与条件 -</> \n<@gray.note>· 管理员权限等阶≥40级</> \n<@gray.note>· 完成主线任务：第一章 - 进程Ⅱ - 开拓前路</>\n\n<@intru.bold>- 玩法简介 -</> \n<@gray.note>· 「战争回响」为赛季制常驻挑战玩法，管理员可通过挑战不同关卡累积星数评级，来获得最终的赛季称号。</> \n<@gray.note>· 每个赛季包含多个轮换周期，每个轮换周期持续时间一般不少于7天，并于该周期最后一天的次日服务器时间04:00轮换至下一周期。</> \n<@gray.note>· 每个轮换周期包含3个关卡。 同一轮换周期内，3个关卡所获星数之和为该周期的总评级。</> \n<@gray.note>· 周期轮换后，新周期的关卡星数评级将被重置，需重新挑战以再次获得星数；历史周期的总评级将被记录，并将参与赛季的「最终评级」统计。</> \n<@gray.note>· 当前赛季各轮换周期总评级中的最高者，将作为本赛季的「最终评级」。依照最终评级，管理员可获得对应的赛季称号。</> \n<@gray.note>· 当前赛季的赛季称号会在好友相关界面展示。</>\n<@gray.note>· 更多玩法说明，可在「战争回响」界面中查看。</> ",
+      "id": "activity_timelimited_typhoea_archery",
+      "name": "挽弓试炼",
+      "desc": "<size=30><color=#FFF100>该常驻玩法包含限时试炼任务，任务过期后将无法参与，玩法仍可继续体验。</color></size>\n\n猎人虽停止狩猎，却不会忘记精进箭术。",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 完成支线任务「雾隐冬梦深林中」</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，完成「挽弓试炼」试炼任务，即可获得对应奖励。</>\n<@gray.note>· 完成基础教学解锁多种箭矢芯片，通过配置不同的箭矢芯片完成进阶训练和日常训练，获取对应奖励与目标。</>\n<@gray.note>· 日常训练目标状态每日刷新。</>\n<@gray.note>·「挽弓试炼」在活动时间结束后将转为常驻活动，转为常驻活动后管理员将无法领取限时试炼任务奖励，但仍可继续游玩获取训练首通奖励。请管理员注意活动时间，及时领取奖励。</>",
       "time": {
-        "start": "2026/7/15 18:00:00",
-        "startMs": 1784109600000,
+        "start": "2026/9/9 12:00:00",
+        "startMs": 1788926400000,
+        "end": "2026/10/15 6:00:00",
+        "endMs": 1792015200000,
+        "permanent": false
+      },
+      "conditions": [
+        {
+          "conditionId": "activity_typhoea_archery_unlock_condition_1",
+          "desc": "完成支线任务「雾隐冬梦深林中」（完成主线任务「第二章 - 进程Ⅶ - 余晖未却」后可开启对应任务）",
+          "tips": "当前主线任务进度：「%s」"
+        }
+      ],
+      "rewards": [
+        "嵌晶玉×1200",
+        "高级认知载体×1",
+        "折金票×1",
+        "高级作战记录×1",
+        "高阶培养自选箱Ⅰ×1",
+        "存续的痕迹×1",
+        "武器检查套组×1",
+        "协议棱柱组×1",
+        "重型强固模具×1"
+      ],
+      "stages": [
+        {
+          "stageId": "activity_timelimited_typhoea_archery_stage_1",
+          "name": "",
+          "time": {
+            "start": "2026/9/9 12:00:00",
+            "startMs": 1788926400000,
+            "end": "2026/10/15 6:00:00",
+            "endMs": 1792015200000,
+            "permanent": false
+          },
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "id": "activity_timeunlimited_typhoea_archery",
+      "name": "挽弓试炼",
+      "desc": "猎人虽停止狩猎，却不会忘记精进箭术。",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 完成支线任务「雾隐冬梦深林中」</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 完成基础教学解锁多种箭矢芯片，通过配置不同的箭矢芯片完成进阶训练和日常训练，获取对应奖励与目标。</>\n<@gray.note>· 日常训练目标状态每日刷新。</>",
+      "time": {
+        "start": "2026/10/14 17:00:00",
+        "startMs": 1791968400000,
         "end": null,
         "endMs": null,
         "permanent": true
       },
       "conditions": [
         {
-          "conditionId": "activity_seasontower_0_unlock_condition_1",
-          "desc": "管理员权限等阶到达40级",
-          "tips": "当前权限等阶%d级（可根据行动手册指引完成各项任务，获取行动资历，提升权限等阶）"
+          "conditionId": "activity_timeunlimited_typhoea_archery_unlock_condition_1",
+          "desc": "完成支线任务「雾隐冬梦深林中」（完成主线任务「第二章 - 进程Ⅶ - 余晖未却」后可开启对应任务）",
+          "tips": "当前主线任务进度：「%s」"
         }
       ],
       "rewards": [
-        "嵌晶玉×1",
+        "嵌晶玉×300",
+        "高级认知载体×1",
+        "折金票×1",
+        "高级作战记录×1"
+      ],
+      "stages": [
+        {
+          "stageId": "activity_timeunlimited_typhoea_archery_stage_1",
+          "name": "",
+          "time": {
+            "start": "2026/10/14 17:00:00",
+            "startMs": 1791968400000,
+            "end": null,
+            "endMs": null,
+            "permanent": true
+          },
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "id": "activity_limited_formula_2",
+      "name": "集成援助·泡泡出击",
+      "desc": "前进吧，生产吧，让龙泡泡的足迹遍布大地！",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 完成主线任务：第二章 - 进程Ⅱ - 无患之患</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可完成任务并生产可提交给据点的援助物品，以获得丰厚奖励。</>\n<@gray.note>· 活动分为三个阶段，当第一阶段任务完成后，可获得奖励与限时生产配方，通过集成工业生产援助物品提交给据点，可获得【武陵调度券】与【援助成果券】，并在物资兑换处兑换物资。</>\n<@gray.note>· 第8天时，物资兑换处会新增额外的可兑换物资。</>\n<@gray.note>· 同时，如果第一阶段任务完成则开启第二阶段任务。完成任务后，可获得奖励与更加强力的限时生产配方，可生产进阶援助物品并提交给据点可获得更多【武陵调度券】与【援助成果券】，并在物资兑换处兑换物资。</>\n<@gray.note>· 达成援助成果券相关获取条件后，开启最后一阶段任务，完成任务后即可获得奖励。</>\n<@gray.note>·9月30日16:00（服务器时间），活动会关闭。届时，已生产但未提交给据点的援助物品，将会自动兑换为【武陵调度券】与【援助成果券】并通过邮件发送。其中，超出可兑换调度券上限部分将自动兑换为【援助成果券】。</>\n<@gray.note>· 活动关闭后，物资兑换处还会额外开放一段时间便于管理员兑换剩余物资。请管理员在10月7日04:00（服务器时间）前及时兑换。</>",
+      "time": {
+        "start": "2026/9/16 12:00:00",
+        "startMs": 1789531200000,
+        "end": "2026/10/7 4:00:00",
+        "endMs": 1791316800000,
+        "permanent": false
+      },
+      "conditions": [
+        {
+          "conditionId": "activity_limited_formula_2_unlock_condition_1",
+          "desc": "完成主线任务：第二章 - 进程II - 无患之患",
+          "tips": "当前主线任务进度：「%s」"
+        }
+      ],
+      "rewards": [
+        "泡泡出击×1",
+        "嵌晶玉×1600",
+        "存续的痕迹×1",
         "高阶培养自选箱Ⅰ×1",
         "高级认知载体×1",
-        "存续的痕迹×1",
         "折金票×1",
-        "协议棱柱组×1"
+        "协议圆盘组×1",
+        "协议棱柱组×1",
+        "武器检查套组×1"
       ],
-      "stages": []
+      "stages": [
+        {
+          "stageId": "activity_limited_formula_2_stage_1",
+          "name": "",
+          "time": {
+            "start": "2026/9/16 12:00:00",
+            "startMs": 1789531200000,
+            "end": "2026/10/7 4:00:00",
+            "endMs": 1791316800000,
+            "permanent": false
+          },
+          "rewards": [],
+          "desc": "生产援助物品并提交至据点"
+        },
+        {
+          "stageId": "activity_limited_formula_2_stage_2",
+          "name": "",
+          "time": {
+            "start": "2026/9/23 4:00:00",
+            "startMs": 1790107200000,
+            "end": "2026/9/30 16:00:00",
+            "endMs": 1790755200000,
+            "permanent": false
+          },
+          "rewards": [],
+          "desc": "生产援助物品并提交至据点"
+        },
+        {
+          "stageId": "activity_limited_formula_2_stage_3",
+          "name": "",
+          "time": {
+            "start": "2026/9/23 4:00:00",
+            "startMs": 1790107200000,
+            "end": "2026/9/30 16:00:00",
+            "endMs": 1790755200000,
+            "permanent": false
+          },
+          "rewards": [],
+          "desc": "生产援助物品并提交至据点"
+        },
+        {
+          "stageId": "activity_limited_formula_2_stage_4",
+          "name": "",
+          "time": {
+            "start": "2026/9/30 16:00:00",
+            "startMs": 1790755200000,
+            "end": "2026/10/7 4:00:00",
+            "endMs": 1791316800000,
+            "permanent": false
+          },
+          "rewards": []
+        }
+      ]
     },
     {
       "id": "activity_racingdungeon_1",
@@ -3197,6 +3574,114 @@
             "startMs": 1786737600000,
             "end": "2026/9/2 6:00:00",
             "endMs": 1788300000000,
+            "permanent": false
+          },
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "id": "activity_parkour",
+      "name": "跑者运动会",
+      "desc": "一年一度！武陵跑者之间最受欢迎的综合运动赛事就此开幕！……但今年好像有些不一样？",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 完成主线任务：第二章 - 进程II - 东风就绪</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员可前往武陵城参与赛跑活动。</>\n<@gray.note>· 活动共有4个赛道。活动开启时，将会开放前2个赛道。从第2天起，每日将会开放1个新的赛道。</>\n<@gray.note>· 每条赛道中存在可收集的龙泡泡气球，收集后即可累计[跑者历程]里程碑进度；累计收集达到特定数量后，可领取对应节点奖励。</>",
+      "time": {
+        "start": "2026/10/1 12:00:00",
+        "startMs": 1790827200000,
+        "end": "2026/10/15 6:00:00",
+        "endMs": 1792015200000,
+        "permanent": false
+      },
+      "conditions": [
+        {
+          "conditionId": "activity_wuling_racing_1_condition",
+          "desc": "完成主线任务：第二章 - 进程II - 东风就绪",
+          "tips": "当前主线任务进度：「%s」"
+        }
+      ],
+      "rewards": [
+        "冠军跑者×1",
+        "嵌晶玉×1200",
+        "高阶培养自选箱Ⅰ×1",
+        "“滚动龙泡泡”特饮×1",
+        "存续的痕迹×1",
+        "高级认知载体×1",
+        "折金票×1",
+        "初级认知载体×1",
+        "协议棱柱组×1",
+        "武器检查套组×1",
+        "高级作战记录×1",
+        "协议棱柱×1"
+      ],
+      "stages": [
+        {
+          "stageId": "activity_wuling_racing_stage_1",
+          "name": "",
+          "time": {
+            "start": "2026/10/1 12:00:00",
+            "startMs": 1790827200000,
+            "end": "2026/10/15 6:00:00",
+            "endMs": 1792015200000,
+            "permanent": false
+          },
+          "rewards": []
+        },
+        {
+          "stageId": "activity_wuling_racing_stage_02",
+          "name": "",
+          "time": {
+            "start": "2026/10/1 12:00:00",
+            "startMs": 1790827200000,
+            "end": "2026/10/15 6:00:00",
+            "endMs": 1792015200000,
+            "permanent": false
+          },
+          "rewards": []
+        },
+        {
+          "stageId": "activity_wuling_racing_stage_03",
+          "name": "",
+          "time": {
+            "start": "2026/10/2 4:00:00",
+            "startMs": 1790884800000,
+            "end": "2026/10/15 6:00:00",
+            "endMs": 1792015200000,
+            "permanent": false
+          },
+          "rewards": []
+        },
+        {
+          "stageId": "activity_wuling_racing_stage_04",
+          "name": "",
+          "time": {
+            "start": "2026/10/3 4:00:00",
+            "startMs": 1790971200000,
+            "end": "2026/10/15 6:00:00",
+            "endMs": 1792015200000,
+            "permanent": false
+          },
+          "rewards": []
+        },
+        {
+          "stageId": "activity_wuling_racing_stage_05",
+          "name": "",
+          "time": {
+            "start": "2026/10/3 4:00:00",
+            "startMs": 1790971200000,
+            "end": "2026/10/15 6:00:00",
+            "endMs": 1792015200000,
+            "permanent": false
+          },
+          "rewards": []
+        },
+        {
+          "stageId": "activity_wuling_racing_stage_hidden74",
+          "name": "",
+          "time": {
+            "start": "2026/10/3 4:00:00",
+            "startMs": 1790971200000,
+            "end": "2026/10/15 6:00:00",
+            "endMs": 1792015200000,
             "permanent": false
           },
           "rewards": []
@@ -3926,6 +4411,82 @@
       ]
     },
     {
+      "id": "activity_map02_guide_009",
+      "name": "雪降深林",
+      "desc": "应龙关旁，路径延向森冷幽景。枯枝低语，木石匿踪……雪松林静静等待。",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 在任务「迷雾藏起松林」中，完成「前往林地入口」（完成主线任务「第二章 - 进程Ⅶ - 余晖未却」后可开启对应任务）</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，请管理员前往武陵地区的「雪松林」区域，完成解锁协议传送点、开启协议储藏箱等任务，即可获得丰厚奖励。</>",
+      "time": {
+        "start": "2026/9/1 18:00:00",
+        "startMs": 1788256800000,
+        "end": "2026/9/30 12:00:00",
+        "endMs": 1790740800000,
+        "permanent": false
+      },
+      "conditions": [
+        {
+          "conditionId": "activity_guide_cedarforest_unlockmain",
+          "desc": "在任务「迷雾藏起松林」中，完成「前往林地入口」（完成主线任务「第二章 - 进程Ⅶ - 余晖未却」后可开启对应任务）",
+          "tips": "当前主线任务进度：「%s」"
+        }
+      ],
+      "rewards": [
+        "嵌晶玉×1200",
+        "存续的痕迹×7"
+      ],
+      "stages": [
+        {
+          "stageId": "activity_guide_cedarforest_stage_1",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "嵌晶玉×600",
+            "存续的痕迹×3"
+          ],
+          "desc": "在「雾隐冬梦深林中」，完成任务「迷雾藏起松林」"
+        },
+        {
+          "stageId": "activity_guide_cedarforest_stage_2",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "嵌晶玉×150",
+            "存续的痕迹×1"
+          ],
+          "desc": "在「雾隐冬梦深林中」，完成任务「长箭划破梦境」"
+        },
+        {
+          "stageId": "activity_guide_cedarforest_stage_3",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "嵌晶玉×150",
+            "存续的痕迹×1"
+          ],
+          "desc": "于雪松林区域累计回收2个装备模板箱"
+        },
+        {
+          "stageId": "activity_guide_cedarforest_stage_4",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "嵌晶玉×150",
+            "存续的痕迹×1"
+          ],
+          "desc": "于雪松林区域累计解锁4个协议传送点"
+        },
+        {
+          "stageId": "activity_guide_cedarforest_stage_5",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "嵌晶玉×150",
+            "存续的痕迹×1"
+          ],
+          "desc": "于雪松林区域累计开启任意3个协议储藏箱"
+        }
+      ]
+    },
+    {
       "id": "activity_checkin_laevat",
       "name": "行火留烬签到",
       "desc": "参与签到累计可领取行火留烬寻访凭证×5等丰富奖励。",
@@ -4332,6 +4893,38 @@
       "stages": []
     },
     {
+      "id": "activity_checkin_typhoea",
+      "name": "镞砺括羽签到",
+      "desc": "参与签到累计可领取镞砺括羽寻访凭证×5等丰富奖励。",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 每日登录游戏即可领取签到奖励。</>\n<@gray.note>· 完成7日签到累计可领取【镞砺括羽寻访凭证】×5等丰富奖励。</>",
+      "time": {
+        "start": "2026/9/1 18:00:00",
+        "startMs": 1788256800000,
+        "end": "2026/9/30 12:00:00",
+        "endMs": 1790740800000,
+        "permanent": false
+      },
+      "conditions": [],
+      "rewards": [],
+      "stages": []
+    },
+    {
+      "id": "activity_checkin_parkour",
+      "name": "陵水渡秋签到",
+      "desc": "参与签到累计可领取头像·跑动行进、嵌晶玉×1500等丰富奖励。",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n \n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 每日登录游戏即可领取签到奖励。</>\n<@gray.note>· 完成7日签到累计可领取【头像·跑动行进】、【嵌晶玉】×1500等丰富奖励。</>",
+      "time": {
+        "start": "2026/10/1 12:00:00",
+        "startMs": 1790827200000,
+        "end": "2026/10/15 6:00:00",
+        "endMs": 1792015200000,
+        "permanent": false
+      },
+      "conditions": [],
+      "rewards": [],
+      "stages": []
+    },
+    {
       "id": "activity_cultivation_refund",
       "name": "干员培养助力",
       "desc": "",
@@ -4526,22 +5119,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "activity_newplayer_benefits_display",
-      "name": "启程福利展览板",
-      "desc": "",
-      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 管理员可在本活动界面中查看各个系统和活动的奖励领取情况。</>\n<@gray.note>· 当所有展示的奖励领取后，本活动界面将在次日服务器时间04:00关闭。</>",
-      "time": {
-        "start": "2025/12/9 4:00:00",
-        "startMs": 1765224000000,
-        "end": null,
-        "endMs": null,
-        "permanent": true
-      },
-      "conditions": [],
-      "rewards": [],
-      "stages": []
     },
     {
       "id": "activity_level_rewards",
