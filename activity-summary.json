@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-09-08T02:31:27.968Z",
+    "generatedAt": "2026-09-24T02:31:12.869Z",
     "lang": "CN",
     "timezoneOffsetMinutes": 480,
-    "activityCount": 101,
+    "activityCount": 103,
     "withRewards": true,
     "withItemNames": true,
     "withStages": true,
@@ -2283,7 +2283,136 @@
         }
       ],
       "rewards": [],
-      "stages": []
+      "stages": [
+        {
+          "stageId": "activity_high_difficulty_v1d5_stage_1",
+          "name": "在「影拓丰碑」中，通关普通模式“三角定位”",
+          "time": {
+            "start": "2026/10/5 12:00:00",
+            "startMs": 1791172800000,
+            "end": null,
+            "endMs": null,
+            "permanent": true
+          },
+          "rewards": [
+            "嵌晶玉×150",
+            "高级认知载体×5",
+            "武器检查套组×10"
+          ]
+        },
+        {
+          "stageId": "activity_high_difficulty_v1d5_stage_2",
+          "name": "在「影拓丰碑」中，通关普通模式“兽影生杀”",
+          "time": {
+            "start": "2026/10/5 12:00:00",
+            "startMs": 1791172800000,
+            "end": null,
+            "endMs": null,
+            "permanent": true
+          },
+          "rewards": [
+            "嵌晶玉×150",
+            "高级认知载体×5",
+            "武器检查套组×10"
+          ]
+        },
+        {
+          "stageId": "activity_high_difficulty_v1d5_stage_3",
+          "name": "在「影拓丰碑」中，通关普通模式“沛然轰鸣”",
+          "time": {
+            "start": "2026/10/5 12:00:00",
+            "startMs": 1791172800000,
+            "end": null,
+            "endMs": null,
+            "permanent": true
+          },
+          "rewards": [
+            "嵌晶玉×150",
+            "高级认知载体×5",
+            "武器检查套组×10"
+          ]
+        },
+        {
+          "stageId": "activity_high_difficulty_v1d5_stage_4",
+          "name": "在「影拓丰碑」中，通关普通模式“暗曜白霆”",
+          "time": {
+            "start": "2026/10/5 12:00:00",
+            "startMs": 1791172800000,
+            "end": null,
+            "endMs": null,
+            "permanent": true
+          },
+          "rewards": [
+            "嵌晶玉×150",
+            "协议圆盘组×6",
+            "折金票×30000"
+          ]
+        },
+        {
+          "stageId": "activity_high_difficulty_v1d5_stage_5",
+          "name": "活动期间，挑战“幽影刻形”任意关卡4次",
+          "time": {
+            "start": "2026/10/5 12:00:00",
+            "startMs": 1791172800000,
+            "end": null,
+            "endMs": null,
+            "permanent": true
+          },
+          "rewards": [
+            "嵌晶玉×150",
+            "重型强固模具×6",
+            "折金票×30000"
+          ]
+        },
+        {
+          "stageId": "activity_high_difficulty_v1d5_stage_6",
+          "name": "活动期间，挑战“幽影刻形”任意苦难模式关卡1次",
+          "time": {
+            "start": "2026/10/5 12:00:00",
+            "startMs": 1791172800000,
+            "end": null,
+            "endMs": null,
+            "permanent": true
+          },
+          "rewards": [
+            "嵌晶玉×150",
+            "协议棱柱组×8",
+            "折金票×30000"
+          ]
+        },
+        {
+          "stageId": "activity_high_difficulty_v1d5_stage_7",
+          "name": "活动期间，在「影拓丰碑」中，累计造成100万伤害",
+          "time": {
+            "start": "2026/10/5 12:00:00",
+            "startMs": 1791172800000,
+            "end": null,
+            "endMs": null,
+            "permanent": true
+          },
+          "rewards": [
+            "嵌晶玉×150",
+            "高阶培养自选箱Ⅰ×5",
+            "协议棱柱组×8"
+          ]
+        },
+        {
+          "stageId": "activity_high_difficulty_v1d5_stage_8",
+          "name": "活动期间，在「影拓丰碑」中，挑战任意关卡4次",
+          "time": {
+            "start": "2026/10/5 12:00:00",
+            "startMs": 1791172800000,
+            "end": null,
+            "endMs": null,
+            "permanent": true
+          },
+          "rewards": [
+            "嵌晶玉×150",
+            "高阶培养自选箱Ⅰ×5",
+            "协议棱柱组×8"
+          ]
+        }
+      ]
     },
     {
       "id": "activity_submit_food_1",
@@ -4487,6 +4616,82 @@
       ]
     },
     {
+      "id": "activity_map02_guide_dg016",
+      "name": "于钟鸣的旧城",
+      "desc": "以钟鸣之声为楔子，以钟鸣之声为结语，沉溺于寂静灾厄中的城将为您揭开记忆的一角。",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 在支线任务「钟鸣人归」中，完成「探访遂明」（完成主线任务「第二章 - 进程Ⅶ - 余晖未却」后可开启对应任务）</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，请管理员前往武陵地区的「遂明」区域，完成解锁协议传送点、开启协议储藏箱等任务，即可获得丰厚奖励。</>",
+      "time": {
+        "start": "2026/9/24 12:00:00",
+        "startMs": 1790222400000,
+        "end": "2026/10/15 6:00:00",
+        "endMs": 1792015200000,
+        "permanent": false
+      },
+      "conditions": [
+        {
+          "conditionId": "activity_guide_snowcity_unlockmain",
+          "desc": "在支线任务「钟鸣人归」中，完成「探访遂明」（完成主线任务「第二章 - 进程Ⅶ - 余晖未却」后可开启对应任务）",
+          "tips": "当前主线任务进度：「%s」"
+        }
+      ],
+      "rewards": [
+        "嵌晶玉×1200",
+        "存续的痕迹×7"
+      ],
+      "stages": [
+        {
+          "stageId": "activity_guide_snowcity_stage_1",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "嵌晶玉×600",
+            "存续的痕迹×3"
+          ],
+          "desc": "在探索任务「钟鸣人归」中，完成「取得替换件“巽”」"
+        },
+        {
+          "stageId": "activity_guide_snowcity_stage_2",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "嵌晶玉×150",
+            "存续的痕迹×1"
+          ],
+          "desc": "在探索任务「钟鸣人归」中，完成「取得替换件“坎”」"
+        },
+        {
+          "stageId": "activity_guide_snowcity_stage_3",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "嵌晶玉×150",
+            "存续的痕迹×1"
+          ],
+          "desc": "完成探索任务「钟鸣人归」"
+        },
+        {
+          "stageId": "activity_guide_snowcity_stage_4",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "嵌晶玉×150",
+            "存续的痕迹×1"
+          ],
+          "desc": "于遂明区域累计解锁2个协议传送点"
+        },
+        {
+          "stageId": "activity_guide_snowcity_stage_5",
+          "name": "",
+          "time": null,
+          "rewards": [
+            "嵌晶玉×150",
+            "存续的痕迹×1"
+          ],
+          "desc": "于遂明区域累计开启任意3个协议储藏箱"
+        }
+      ]
+    },
+    {
       "id": "activity_checkin_laevat",
       "name": "行火留烬签到",
       "desc": "参与签到累计可领取行火留烬寻访凭证×5等丰富奖励。",
@@ -4922,6 +5127,26 @@
       },
       "conditions": [],
       "rewards": [],
+      "stages": []
+    },
+    {
+      "id": "activity_character_gift_purrche",
+      "name": "我们的大菲林！来袭！",
+      "desc": "",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 活动期间，管理员完成登录、参与各类玩法等任务，即可领取奖励。</>\n<@gray.note>· 活动期间，共可获得5星干员【噗切娜】×6以及5星武器【点心时刻（单手剑）】×6奖励。</>\n\n<@intru.bold>- 特殊提示 -</>\n<@gray.note>· 完成主线任务「第二章 - 进程Ⅶ - 余晖未却」后，可开启支线任务「钟鸣人归」。</>\n<@gray.note>· 完成主线任务「第二章 - 进程II - 东风就绪」后，可开启活动「跑者运动会」。</>\n<@gray.note>· 完成主线任务「第一章 - 进程Ⅱ - 开拓前路」，且管理员权限等阶≥30级后，可开启玩法「影拓丰碑」。</>\n<@gray.note>· 完成主线任务「第一章 - 进程Ⅱ - 开拓前路」，且管理员权限等阶≥40级后，可开启玩法「战争回响」。</>",
+      "time": {
+        "start": "2026/9/24 12:00:00",
+        "startMs": 1790222400000,
+        "end": "2026/10/15 6:00:00",
+        "endMs": 1792015200000,
+        "permanent": false
+      },
+      "conditions": [],
+      "rewards": [
+        "噗切娜×1",
+        "噗切娜的信物×1",
+        "点心时刻×1"
+      ],
       "stages": []
     },
     {
