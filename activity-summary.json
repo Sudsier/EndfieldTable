@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-09-24T02:31:12.869Z",
+    "generatedAt": "2026-10-08T02:31:27.312Z",
     "lang": "CN",
     "timezoneOffsetMinutes": 480,
-    "activityCount": 103,
+    "activityCount": 104,
     "withRewards": true,
     "withItemNames": true,
     "withStages": true,
@@ -5147,6 +5147,22 @@
         "噗切娜的信物×1",
         "点心时刻×1"
       ],
+      "stages": []
+    },
+    {
+      "id": "activity_checkin_v1d5_end",
+      "name": "天地墨显签到",
+      "desc": "「丹青渡」版本即将开放，参与签到累计可领取基础寻访凭证×2和嵌晶玉×500等奖励。",
+      "instruction": "<@intru.bold>- 参与条件 -</>\n<@gray.note>· 活动中心解锁后</>\n\n<@intru.bold>- 活动规则 -</>\n<@gray.note>· 每日登录游戏即可领取签到奖励。</>\n<@gray.note>· 完成3日签到累计可领取【基础寻访凭证】×2和【嵌晶玉】×500等奖励。</>",
+      "time": {
+        "start": "2026/10/8 12:00:00",
+        "startMs": 1791432000000,
+        "end": "2026/10/15 6:00:00",
+        "endMs": 1792015200000,
+        "permanent": false
+      },
+      "conditions": [],
+      "rewards": [],
       "stages": []
     },
     {
